@@ -31,7 +31,7 @@ namespace PypestreamHackathon.Dialogs
             {
                 var alias = await textResult;
 
-                // Check if the user has a mobile number in AD...we can only reset users with mobiles
+                // Can only reset passwords for people with mobile numbers in AAD
                 var mobile = await getMobile(alias);
                 if (String.IsNullOrEmpty(mobile))
                 {
