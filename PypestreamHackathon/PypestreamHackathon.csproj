@@ -136,10 +136,12 @@
     <Compile Include="Dialogs\ResetPasswordDialog.cs" />
     <Compile Include="Dialogs\RootDialog.cs" />
     <Compile Include="Dialogs\UpdateMobileDialog.cs" />
+    <Compile Include="Dialogs\SearchBingDialog.cs" />
     <Compile Include="Dialogs\UpdatePictureDialog.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\BingHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
