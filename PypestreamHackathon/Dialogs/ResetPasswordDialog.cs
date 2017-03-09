@@ -20,10 +20,10 @@ namespace PypestreamHackathon.Dialogs
     {
         public async Task StartAsync(IDialogContext context)
         {
-            context.Wait<LuisResult>(MessageRecievedAsync);
+            context.Wait<LuisResult>(MessageReceivedAsync);
         }
 
-        public async Task MessageRecievedAsync(IDialogContext context, IAwaitable<LuisResult> input)
+        public async Task MessageReceivedAsync(IDialogContext context, IAwaitable<LuisResult> input)
         {
             var luis = await input;
 
