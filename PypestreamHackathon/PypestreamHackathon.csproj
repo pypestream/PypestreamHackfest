@@ -196,6 +196,7 @@
     <Content Include="packages.config" />
     <Content Include="PypestreamCert.cer" />
     <Content Include="PypestreamCert.pfx" />
+    <Content Include="PypestreamHackfestLuis.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
