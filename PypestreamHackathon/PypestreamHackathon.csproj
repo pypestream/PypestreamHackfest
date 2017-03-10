@@ -115,6 +115,10 @@
       <HintPath>..\packages\Newtonsoft.Json.10.0.1-beta1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="RestSharp, Version=105.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.105.2.2\lib\net46\RestSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -175,6 +179,10 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="Twilio.Api, Version=3.4.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Twilio.4.7.2\lib\3.5\Twilio.Api.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="default.htm" />
@@ -196,7 +204,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\BingHelper.cs" />
-    <Content Include="Helpers\TwilioHelper.txt" />
+    <Compile Include="Helpers\TwilioHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -204,6 +212,8 @@
     <Content Include="PypestreamCert.cer" />
     <Content Include="PypestreamCert.pfx" />
     <Content Include="PypestreamHackfestLuis.json" />
+    <None Include="Properties\PublishProfiles\pypestreamhack - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\pypestreamhack - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
