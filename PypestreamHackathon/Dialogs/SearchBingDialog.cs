@@ -35,6 +35,7 @@ namespace PypestreamHackathon.Dialogs
 
             string searchResultsString = String.Join(string.Empty, rez);
 
+            // Add carosel here...time provided
 
             context.Done(searchResultsString);
         }
