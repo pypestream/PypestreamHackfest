@@ -21,12 +21,22 @@ namespace PypestreamHackathon.Dialogs
         public async Task MessageRecievedAsync(IDialogContext context, IAwaitable<LuisResult> input)
         {
             var x = await input;
-            //PypestreamHackathon.Helpers.BingHelper bingHelper = new BingHelper();
+            string query = x.Query;
+            PypestreamHackathon.Helpers.BingHelper bingHelper = new BingHelper();
 
-            //Task<List<SearchResult>> bingSearchResult = bingHelper.GetSearchResults("BitCoin");
+            var bingSearchResults = await bingHelper.GetSearchResults(query, 5);
+
+            List<string> rez = new List<string>();
+
+            foreach (var searchResult in bingSearchResults)
+            {
+                rez.Add(searchResult.Title);
+            }
+
+            string searchResultsString = String.Join(string.Empty, rez);
 
 
-            context.Done("TODO: search bing!");
+            context.Done(searchResultsString);
         }
     }
 }

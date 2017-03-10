@@ -12,7 +12,7 @@ namespace PypestreamHackathon.Helpers
 {
     public class BingHelper
     {
-        public async Task<List<SearchResult>> GetSearchResults(string query)
+        public async Task<List<SearchResult>> GetSearchResults(string query, int maxresults)
         {
             List<SearchResult> results = new List<SearchResult>();
             var bingSubKey = ConfigurationManager.AppSettings["BingSubKey"];
@@ -26,7 +26,7 @@ namespace PypestreamHackathon.Helpers
             // Request parameters
             //queryString["q"] = "domain:microsoft.com " + query;
             queryString["q"] = "" + query;
-            queryString["count"] = "1";
+            queryString["count"] =  System.Convert.ToString(maxresults);
             queryString["offset"] = "0";
             queryString["mkt"] = "en-us";
             queryString["safesearch"] = "strict";
@@ -43,10 +43,14 @@ namespace PypestreamHackathon.Helpers
             if (data.Count > 0)
             {
                 var webPages = data["webPages"]["value"];
-                title = (string)webPages[0]["name"];
-                url = (string)webPages[0]["url"];
+                foreach (var webPage in webPages)
+                {
+                    results.Add(new SearchResult { Title = (string) webPage["name"], Url = (string)webPage["url"] });
+                }
+               // title = (string)webPages[0]["name"];
+               // url = (string)webPages[0]["url"];
             }
-            results.Add(new SearchResult { Title = title, Url = url });
+           
             return results;
         }
     }

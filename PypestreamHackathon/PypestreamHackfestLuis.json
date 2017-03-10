@@ -1,0 +1,125 @@
+{
+  "luis_schema_version": "1.3.1",
+  "versionId": "0.1",
+  "name": "PypestreamHackfest",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "None"
+    },
+    {
+      "name": "ResetPassword"
+    },
+    {
+      "name": "UpdateMobile"
+    },
+    {
+      "name": "UpdatePicture"
+    }
+  ],
+  "entities": [],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [],
+  "actions": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "i want to change my profile picture",
+      "intent": "UpdatePicture",
+      "entities": []
+    },
+    {
+      "text": "how can i change my picture",
+      "intent": "UpdatePicture",
+      "entities": []
+    },
+    {
+      "text": "update picture",
+      "intent": "UpdatePicture",
+      "entities": []
+    },
+    {
+      "text": "change profile picture",
+      "intent": "UpdatePicture",
+      "entities": []
+    },
+    {
+      "text": "change picture",
+      "intent": "UpdatePicture",
+      "entities": []
+    },
+    {
+      "text": "i cannot login",
+      "intent": "ResetPassword",
+      "entities": []
+    },
+    {
+      "text": "i can't login",
+      "intent": "ResetPassword",
+      "entities": []
+    },
+    {
+      "text": "i need to reset my password",
+      "intent": "ResetPassword",
+      "entities": []
+    },
+    {
+      "text": "password reset",
+      "intent": "ResetPassword",
+      "entities": []
+    },
+    {
+      "text": "reset password",
+      "intent": "ResetPassword",
+      "entities": []
+    },
+    {
+      "text": "i'm locked out",
+      "intent": "ResetPassword",
+      "entities": []
+    },
+    {
+      "text": "i can't sign-in",
+      "intent": "ResetPassword",
+      "entities": []
+    },
+    {
+      "text": "having trouble signing in",
+      "intent": "ResetPassword",
+      "entities": []
+    },
+    {
+      "text": "i can't sign in",
+      "intent": "ResetPassword",
+      "entities": []
+    },
+    {
+      "text": "update my mobile number",
+      "intent": "UpdateMobile",
+      "entities": []
+    },
+    {
+      "text": "how to i change my mobile number",
+      "intent": "UpdateMobile",
+      "entities": []
+    },
+    {
+      "text": "update mobile phone",
+      "intent": "UpdateMobile",
+      "entities": []
+    },
+    {
+      "text": "update mobile phone number",
+      "intent": "UpdateMobile",
+      "entities": []
+    },
+    {
+      "text": "change my mobile number",
+      "intent": "UpdateMobile",
+      "entities": []
+    }
+  ]
+}
